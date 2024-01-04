@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title> 备忘录 </title>
+    <h> 备忘录</h>
+    <form action = "/v1/todo" method="post">
+        <div>
+            <label>添加事务</label>
+            <input type="text" name="todo" placeholder="enter your things to do" >
+        </div>
+        <div>
+            <input type="submit" value="add">
+        </div>
+    </form>
+
+    <form action = "/v1/todo" method="get">
+        <div>
+            <label>显示所有事务信息</label>
+        </div>
+        <div>
+            <input type="submit" value="show">
+        </div>
+    </form>
+</head>
+<body>
+<form action = "/v1/pu" method="post">
+    <div>
+        <label>完成事务</label>
+        <input type="text" name="id" placeholder="enter your completed thing's ID" >
+    </div>
+    <div>
+        <input type="submit" value="complete">
+    </div>
+</form>
+
+
+<form action = "/v1/del" method="post">
+    <div>
+        <label>删除事务</label>
+        <input type="text" name="id" placeholder="delete thing's ID" >
+    </div>
+    <div>
+        <input type="submit" value="delete">
+    </div>
+</form>
+
+</body>
+</html>
